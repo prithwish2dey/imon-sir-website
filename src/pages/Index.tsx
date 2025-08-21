@@ -6,9 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Mail, MapPin, ExternalLink, Calendar, DollarSign, User, BookOpen, Award, MessageSquare, ChevronDown, Cpu, Lock, Brain, Atom } from "lucide-react";
+import { Mail, MapPin, ExternalLink, Calendar, DollarSign, User, BookOpen, Award, MessageSquare, ChevronDown, Cpu, Lock, Brain, Atom, GraduationCap, Users, FileText } from "lucide-react";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -16,62 +16,62 @@ const Index = () => {
   const researchInterests = [
     { 
       name: "Quantum Computing", 
-      description: "Quantum algorithms and computational complexity",
+      description: "Quantum algorithms, quantum cryptography, and quantum machine learning",
       icon: Atom,
       color: "bg-blue-100 text-blue-800 border-blue-200"
     },
     { 
       name: "Steganography", 
-      description: "Advanced data hiding and secure communication",
+      description: "Advanced data hiding, secure communication, and image sterilization",
       icon: Lock,
       color: "bg-purple-100 text-purple-800 border-purple-200"
     },
     { 
-      name: "Quantum Machine Learning", 
-      description: "Quantum algorithms for machine learning applications",
-      icon: Brain,
-      color: "bg-green-100 text-green-800 border-green-200"
-    },
-    { 
       name: "Cryptography", 
-      description: "Post-quantum cryptographic protocols",
+      description: "Post-quantum cryptographic protocols and network security",
       icon: Lock,
       color: "bg-red-100 text-red-800 border-red-200"
     },
     { 
       name: "Information Security", 
-      description: "Cybersecurity and data protection methods",
+      description: "Cybersecurity, data protection, and e-governance security",
       icon: Cpu,
       color: "bg-orange-100 text-orange-800 border-orange-200"
+    },
+    { 
+      name: "Machine Learning", 
+      description: "AI applications in agriculture, computer vision, and data analytics",
+      icon: Brain,
+      color: "bg-green-100 text-green-800 border-green-200"
     }
   ];
 
   const fundedProjects = [
     {
-      title: "Quantum Attacks on Stream Ciphers",
-      funding: "DRDO",
-      duration: "2022–2024",
+      title: "Study of Quantum Attacks on Stream Ciphers and Its Counter-Measures",
+      funding: "DRDO, Govt. of India",
+      duration: "Sept, 2022 – Sept, 2024",
       amount: "₹42.25 Lakhs",
       role: "PI"
     },
     {
-      title: "Quantum Machine Learning for Cryptanalysis",
-      funding: "SERB-CRG",
-      duration: "2022–2025", 
+      title: "Extraction, Organization and Query of Scholarly Information",
+      funding: "SERB (CRG), Govt. of India",
+      duration: "March, 2022 to March, 2025",
       amount: "₹45.61 Lakhs",
       role: "PI"
     },
     {
-      title: "Advanced Steganographic Techniques for IoT Security",
-      funding: "MeitY",
-      duration: "2020–2023",
+      title: "AI in Agriculture & Food Sustainability",
+      funding: "MeitY, Govt. of India",
+      duration: "March, 2020 to March, 2023",
       amount: "₹16.18 Lakhs",
       role: "Co-PI"
     },
     {
-      title: "Post-Quantum Cryptographic Protocols",
-      funding: "DST-WB",
-      duration: "2013–2016",
+      title: "Implementation of Security in eGovernance through Steganography",
+      funding: "DST, Govt. of West Bengal",
+      duration: "July, 2013, to June, 2016",
       amount: "₹1.85 Lakhs",
       role: "PI"
     }
@@ -79,27 +79,30 @@ const Index = () => {
 
   const publications = [
     {
-      title: "Quantum Steganography: A Novel Approach to Secure Communication",
-      journal: "Nature Quantum Information",
-      year: "2023",
-      type: "journal"
+      title: "I-ROD: An Ensemble CNNs for Object Detection in Unconstrained Road Scenarios",
+      journal: "Signal, Image and Video Processing",
+      year: "2024",
+      type: "journal",
+      impactFactor: "2.0"
     },
     {
-      title: "Machine Learning Enhanced Quantum Key Distribution",
-      journal: "Physical Review A",
-      year: "2023",
-      type: "journal"
+      title: "SteriCNN: Cloud Native Stego content Sterilization",
+      journal: "Journal of Information Security and Applications",
+      year: "2024",
+      type: "journal",
+      impactFactor: "5.6"
     },
     {
-      title: "Advanced steganographic techniques using quantum computing",
-      journal: "IEEE Transactions on Quantum Engineering",
-      year: "2022",
-      type: "journal"
+      title: "A complex network analysis approach to compare the performance of batsmen across different formats",
+      journal: "Knowledge-Based Systems",
+      year: "2024",
+      type: "journal",
+      impactFactor: "8.8"
     },
     {
-      title: "Quantum Machine Learning Applications in Cryptography",
-      journal: "International Conference on Quantum Computing",
-      year: "2022",
+      title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
+      journal: "3rd International Conference on Security and Privacy (ICSP 2024)",
+      year: "2024",
       type: "conference"
     }
   ];
@@ -107,47 +110,72 @@ const Index = () => {
   const phdSupervision = {
     awarded: [
       {
-        name: "Dr. Rajesh Kumar",
-        thesis: "Quantum Algorithms for Cryptographic Applications",
-        year: "2023",
-        position: "Assistant Professor at IIT Delhi"
+        name: "Dr. Pratap Chandra Mandal",
+        thesis: "Unseen within Seen : A Steganographic Paradigm and Analysis",
+        year: "Oct., 2021",
+        position: "Asst. Professor, B.P. Poddar Institute of Management and Technology"
       },
       {
-        name: "Dr. Priya Sharma",
-        thesis: "Machine Learning Based Quantum Steganography",
-        year: "2022",
-        position: "Senior Research Scientist at ISRO"
+        name: "Dr. Abhishek Mukhopadhyay",
+        thesis: "Object Detection in the Wild: Novel Techniques and Practical Applications",
+        year: "Sept., 2023",
+        position: "Post Doctoral Research Fellow, IISc Bangalore"
+      },
+      {
+        name: "Dr. Nayan Ranjan Das",
+        thesis: "Intelligent Decisions Lead to Success: An Unbiased Recommendation System in the Sport of Cricket for Quantifying Precedence of Players",
+        year: "Nov., 2023",
+        position: "Assistant Professor, Academy of Technology"
+      },
+      {
+        name: "Dr. Ranjan Jana",
+        thesis: "Epileptic Seizure Prediction with Channel Optimization",
+        year: "Dec., 2024",
+        position: "Assistant Professor, RCC Institute of Information Technology"
       }
     ],
     ongoing: [
       {
-        name: "Amit Singh",
-        thesis: "Quantum Machine Learning for Network Security",
-        startYear: "2021"
+        name: "Chiranjit Pal",
+        thesis: "Project JRF, MeitY, Govt. of India",
+        startYear: "2021",
+        status: "Thesis Submitted"
       },
       {
-        name: "Sneha Patel",
-        thesis: "Post-Quantum Steganographic Protocols",
-        startYear: "2022"
+        name: "Sreeparna Ganguly",
+        thesis: "SRF, UGC-NET Fellow",
+        startYear: "2021",
+        status: "Ongoing"
+      },
+      {
+        name: "Koushik Deb",
+        thesis: "Institute Research Fellow",
+        startYear: "2021",
+        status: "Ongoing"
       }
     ]
   };
 
   const talks = [
     {
-      title: "Quantum Computing: The Future of Cryptography",
-      venue: "IIT Bombay",
-      date: "June 2024"
+      title: "Quantum AI",
+      venue: "Faculty Development Program, Electronics & ICT Academy, IIT Roorkee",
+      date: "September 29, 2024"
     },
     {
-      title: "Steganography in the Quantum Era",
-      venue: "IISC Bangalore", 
-      date: "2023"
+      title: "Quantum Computing in the Era of Industry 4.0/5.0",
+      venue: "Pailan College of Management & Technology",
+      date: "September 28, 2024"
     },
     {
-      title: "Machine Learning Meets Quantum Computing",
-      venue: "IIT Kharagpur",
-      date: "2022"
+      title: "Quantum Computing & Quantum Machine Learning",
+      venue: "Haldia Institute of Technology",
+      date: "May 15, 2024"
+    },
+    {
+      title: "Pushing the Limit: Quantum Technology Revamps Computing",
+      venue: "Techno College of Engineering Agartala",
+      date: "March 6, 2024"
     }
   ];
 
@@ -183,8 +211,6 @@ const Index = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Navigation with Dropdowns */}
@@ -203,8 +229,12 @@ const Index = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white border shadow-lg">
                   <DropdownMenuItem onClick={() => scrollToSection('research')}>Research Interests</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => scrollToSection('projects')}>Funded Projects</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => scrollToSection('publications')}>Publications</DropdownMenuItem>
+                  <Link to="/funded-projects">
+                    <DropdownMenuItem>Funded Projects</DropdownMenuItem>
+                  </Link>
+                  <Link to="/publications">
+                    <DropdownMenuItem>Publications</DropdownMenuItem>
+                  </Link>
                 </DropdownMenuContent>
               </DropdownMenu>
 
@@ -214,7 +244,9 @@ const Index = () => {
                   Academic <ChevronDown size={16} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white border shadow-lg">
-                  <DropdownMenuItem onClick={() => scrollToSection('supervision')}>Ph.D. Supervision</DropdownMenuItem>
+                  <Link to="/academic-supervision">
+                    <DropdownMenuItem>Academic Supervision</DropdownMenuItem>
+                  </Link>
                   <DropdownMenuItem onClick={() => scrollToSection('talks')}>Talks & Conferences</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -235,7 +267,7 @@ const Index = () => {
                   Dr. Imon Mukherjee
                 </h1>
                 <p className="text-xl text-slate-600 mb-6">
-                  Distinguished Professor | Expert in Quantum Computing, Steganography & Quantum Machine Learning
+                  Distinguished Professor | Expert in Quantum Computing, Steganography & Information Security
                 </p>
                 <p className="text-lg text-slate-700 mb-8 max-w-2xl">
                   Leading researcher at IIIT Kalyani with Ph.D. from Jadavpur University, specializing in 
@@ -249,13 +281,14 @@ const Index = () => {
                 >
                   Explore Research
                 </Button>
-                <Button 
-                  onClick={() => scrollToSection('publications')}
-                  variant="outline" 
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
-                >
-                  View Publications
-                </Button>
+                <Link to="/publications">
+                  <Button 
+                    variant="outline" 
+                    className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                  >
+                    View Publications
+                  </Button>
+                </Link>
               </div>
             </div>
             
@@ -319,6 +352,18 @@ const Index = () => {
                   <MapPin size={20} className="text-purple-600" />
                   <span className="text-slate-600">IIIT Kalyani, West Bengal, India</span>
                 </div>
+                <div className="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+                  <ExternalLink size={20} className="text-green-600" />
+                  <a href="https://scholar.google.com/citations?user=3xcXNz0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-green-600">
+                    Google Scholar Profile
+                  </a>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-orange-50 rounded-lg">
+                  <ExternalLink size={20} className="text-orange-600" />
+                  <a href="https://orcid.org/0000-0002-8598-148X" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-orange-600">
+                    ORCID Profile
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -351,9 +396,17 @@ const Index = () => {
       {/* Funded Projects */}
       <section id="projects" className="py-16 px-6 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-12">Funded Projects</h2>
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Funded Projects</h2>
+            <Link to="/funded-projects">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                View All Projects
+                <ExternalLink size={16} className="ml-2" />
+              </Button>
+            </Link>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {fundedProjects.map((project, index) => (
+            {fundedProjects.slice(0, 4).map((project, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-blue-50/50">
                 <CardHeader>
                   <CardTitle className="text-slate-800 text-lg">{project.title}</CardTitle>
@@ -387,7 +440,15 @@ const Index = () => {
       {/* Publications */}
       <section id="publications" className="py-16 px-6 bg-gradient-to-r from-slate-50 to-purple-50">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-12">Publications</h2>
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Publications</h2>
+            <Link to="/publications">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                View All Publications
+                <ExternalLink size={16} className="ml-2" />
+              </Button>
+            </Link>
+          </div>
           
           {/* Filter Buttons */}
           <div className="flex justify-center gap-4 mb-8">
@@ -415,7 +476,7 @@ const Index = () => {
           </div>
 
           <div className="space-y-6">
-            {filteredPublications.map((pub, index) => (
+            {filteredPublications.slice(0, 4).map((pub, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start gap-4">
@@ -429,6 +490,11 @@ const Index = () => {
                         <Badge className={pub.type === "journal" ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white" : "bg-gradient-to-r from-green-500 to-teal-500 text-white"}>
                           {pub.type === "journal" ? "Journal" : "Conference"}
                         </Badge>
+                        {pub.impactFactor && (
+                          <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white">
+                            IF: {pub.impactFactor}
+                          </Badge>
+                        )}
                       </div>
                     </div>
                     <Button variant="ghost" size="sm" className="hover:bg-blue-50">
@@ -445,17 +511,25 @@ const Index = () => {
       {/* Ph.D. Supervision */}
       <section id="supervision" className="py-16 px-6 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-12">Ph.D. Supervision</h2>
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ph.D. Supervision</h2>
+            <Link to="/academic-supervision">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                View All Supervision
+                <ExternalLink size={16} className="ml-2" />
+              </Button>
+            </Link>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-12">
             {/* Awarded */}
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-2">
                 <Award className="text-green-600" size={24} />
-                Awarded
+                Awarded ({phdSupervision.awarded.length})
               </h3>
               <div className="space-y-4">
-                {phdSupervision.awarded.map((student, index) => (
+                {phdSupervision.awarded.slice(0, 2).map((student, index) => (
                   <Card key={index} className="bg-gradient-to-r from-green-50 to-teal-50">
                     <CardContent className="p-6">
                       <h4 className="font-semibold text-slate-800">{student.name}</h4>
@@ -474,10 +548,10 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-2">
                 <BookOpen className="text-blue-600" size={24} />
-                Ongoing
+                Ongoing ({phdSupervision.ongoing.length})
               </h3>
               <div className="space-y-4">
-                {phdSupervision.ongoing.map((student, index) => (
+                {phdSupervision.ongoing.slice(0, 2).map((student, index) => (
                   <Card key={index} className="bg-gradient-to-r from-blue-50 to-purple-50">
                     <CardContent className="p-6">
                       <h4 className="font-semibold text-slate-800">{student.name}</h4>
@@ -495,7 +569,7 @@ const Index = () => {
       {/* Talks & Outreach */}
       <section id="talks" className="py-16 px-6 bg-gradient-to-r from-slate-50 to-blue-50">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-12">Talks & Conferences</h2>
+          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-12">Recent Invited Talks</h2>
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {talks.map((talk, index) => (
