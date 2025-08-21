@@ -120,7 +120,7 @@ const AcademicSupervision = () => {
   const btechProjects = [
     {
       title: "Eye Disease Identification using Quantum Machine Learning",
-      students: ["Priththhis De", "Amit Mandhana", "Chirag Shukla", "Sayan Mandal"],
+      students: ["Prithwish Dey", "Amit Mandhana", "Chirag Shukla", "Sayan Mandal"],
       year: "2024",
       institution: "IIIT Kalyani"
     },
