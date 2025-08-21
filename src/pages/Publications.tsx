@@ -106,7 +106,7 @@ const Publications = () => {
   const conferencePublications = [
     {
       title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
-      authors: "Soumen Bajpayee, Sushmita Sarkar, Imon Mukherjee",
+      authors: "Soumen Bajpayee, Sarbani Sen, Prithwish Dey, Imon Mukherjee",
       conference: "3rd International Conference on Security and Privacy (ICSP 2024)",
       venue: "National Institute of Technology, Jamshedpur",
       date: "20-21st November, 2024",
