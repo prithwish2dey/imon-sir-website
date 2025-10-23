@@ -11,13 +11,14 @@ const AcademicSupervision = () => {
       name: "Dr. Pratap Chandra Mandal",
       thesis: "Unseen within Seen : A Steganographic Paradigm and Analysis",
       year: "Oct., 2021",
-      position: "Asst. Professor, B.P. Poddar Institute of Management and Technology"
+      position: "Assistant Professor, B.P. Poddar Institute of Management and Technology"
     },
     {
       name: "Dr. Abhishek Mukhopadhyay",
       thesis: "Object Detection in the Wild: Novel Techniques and Practical Applications",
       year: "Sept., 2023",
-      position: "Post Doctoral Research Fellow, IISc Bangalore",
+      // position: "Post Doctoral Research Fellow, IISc Bangalore",
+      position: "Assistant Professor, Amity University, Kolkata",
       coSupervisor: "Dr. Pradipta Biswas, IISc Bangalore"
     },
     {
@@ -32,17 +33,24 @@ const AcademicSupervision = () => {
       thesis: "Epileptic Seizure Prediction with Channel Optimization",
       year: "Dec., 2024",
       position: "Assistant Professor, RCC Institute of Information Technology"
+    },
+    {
+      name: "Dr. Chiranjit Pal",
+      thesis: "Design of Lightweight Deep Learning Models for Crop Stress Detection",
+      year: "Sept., 2025",
+      position: "Post-Doctoral Research Fellow, IIT BHU",
+      coSupervisor: "Dr. Sanjoy Pratihar and Dr. Sanjay Chatterji"
     }
   ];
 
   const phdOngoing = [
-    {
-      name: "Chiranjit Pal",
-      enrollment: "January, 2021",
-      registration: "Aug., 2022",
-      project: "Project JRF, MeitY, Govt. of India",
-      status: "Thesis Submitted"
-    },
+    // {
+    //   name: "Chiranjit Pal",
+    //   enrollment: "January, 2021",
+    //   registration: "Aug., 2022",
+    //   project: "Project JRF, MeitY, Govt. of India",
+    //   status: "Thesis Submitted"
+    // },
     {
       name: "Sreeparna Ganguly",
       enrollment: "January, 2021",
@@ -77,13 +85,13 @@ const AcademicSupervision = () => {
       project: "JRF, SERB-CRG, Govt. of India",
       status: "Ongoing"
     },
-    {
-      name: "Sarbani Sen",
-      enrollment: "January, 2023",
-      registration: "May, 2024",
-      project: "JRF, DRDO, Govt. of India",
-      status: "Ongoing"
-    },
+    // {
+    //   name: "Sarbani Sen",
+    //   enrollment: "January, 2023",
+    //   registration: "May, 2024",
+    //   project: "JRF, DRDO, Govt. of India",
+    //   status: "Ongoing"
+    // },
     {
       name: "Sugam Bhuina",
       enrollment: "February, 2019",
@@ -97,7 +105,7 @@ const AcademicSupervision = () => {
     {
       name: "Anjan Kumar Payra",
       thesis: "Steganology for The Computer Forensics Examiners",
-      institution: "Kalyani Government Engineering College, Nadia, West Bengal, India",
+      institution: "Dept. of Computer Science & Engineering, Kalyani Government Engineering College, Nadia, West Bengal, India",
       year: "2011"
     }
   ];
@@ -118,6 +126,18 @@ const AcademicSupervision = () => {
   ];
 
   const btechProjects = [
+    {
+      title: "Removal of Image Stegogram through Sterilization",
+      students: ["Ankit Mishra", "Rahul", "Vinay Singh"],
+      year: "2024",
+      institution: "IIIT Kalyani"
+    },
+    {
+      title: "Study and Implementation of Steganalysis Techniques",
+      students: ["Alok Kumar Rai", "Srijanjeet Singh Sehra", "Subham Maji"],
+      year: "2024",
+      institution: "IIIT Kalyani"
+    },
     {
       title: "Eye Disease Identification using Quantum Machine Learning",
       students: ["Prithwish Dey", "Amit Mandhana", "Chirag Shukla", "Sayan Mandal"],
@@ -255,10 +275,7 @@ const AcademicSupervision = () => {
       students: ["Shubham Kumar Rajput"],
       year: "2018",
       institution: "IIIT Kalyani"
-    }
-  ];
-
-  const otherInstitutions = [
+    },
     {
       title: "Novel Approaches for Multi-bit Steganology in Spatial Domain",
       students: ["Debanjan Barman", "Uttiya Ghosh", "Smritikana Maity"],
@@ -323,6 +340,10 @@ const AcademicSupervision = () => {
     }
   ];
 
+  const otherInstitutions = [
+    
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Navigation */}
@@ -345,7 +366,7 @@ const AcademicSupervision = () => {
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Comprehensive record of Dr. Imon Mukherjee's academic supervision across 
-            Ph.D., M.Tech, M.Sc, and B.Tech levels
+            Ph.D., M.Tech., MS/M.Sc., and B.Tech. levels
           </p>
         </div>
       </section>
@@ -361,15 +382,15 @@ const AcademicSupervision = () => {
               </TabsTrigger>
               <TabsTrigger value="mtech" className="flex items-center gap-2">
                 <BookOpen size={16} />
-                M.Tech ({mtechStudents.length})
+                M.Tech. ({mtechStudents.length})
               </TabsTrigger>
               <TabsTrigger value="msc" className="flex items-center gap-2">
                 <BookOpen size={16} />
-                M.Sc ({mscStudents.length})
+                MS/M.Sc. ({mscStudents.length})
               </TabsTrigger>
               <TabsTrigger value="btech" className="flex items-center gap-2">
                 <Users size={16} />
-                B.Tech ({btechProjects.length})
+                B.Tech. ({btechProjects.length})
               </TabsTrigger>
               <TabsTrigger value="other" className="flex items-center gap-2">
                 <Users size={16} />
