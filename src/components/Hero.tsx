@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Image } from "lucide-react";
+import { scholarMetrics } from "@/data/scholarMetrics";
+
+// Calculate max citations for scaling the bars
+const maxCitations = Math.max(...scholarMetrics.citationsByYear.map(item => item.count));
 
 const carouselImages = [
 	{
@@ -91,7 +95,7 @@ export default function Hero() {
 		<section id="home" className="pt-20 pb-16 px-6">
 			<div className="container mx-auto">
 				{/* Top row: Animated profile image on the left, text on the right */}
-				<div className="flex flex-col lg:flex-row items-center gap-12">
+				<div className="flex flex-col lg:flex-row items-center gap-12 relative">
 					{/* Profile Image (animated with jumping effect) */}
 					<motion.img
 						src="/images/profile_image.jpg"
@@ -124,6 +128,58 @@ export default function Hero() {
 									{displayText}
 								</span>
 								<span className="animate-pulse text-purple-600 font-bold">|</span>
+							</div>
+							{/* Google Scholar card fixed on the right */}
+							<div className="hidden lg:block lg:absolute lg:top-0 lg:-right-20">
+								<div className="p-4 bg-white/90 border border-slate-200 rounded-2xl shadow-lg w-[340px]">
+									<div className="flex items-center gap-3 mb-4">
+										<img src="https://scholar.google.com/favicon.ico" alt="GS" className="w-5 h-5" />
+										<div className="flex-1">
+											<div className="text-sm font-medium text-slate-700">Google Scholar</div>
+											<a href={scholarMetrics.profileUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">View profile</a>
+										</div>
+										<div className="text-right">
+											<div className="text-sm text-slate-500">Citations</div>
+											<div className="text-lg font-semibold text-slate-800">{scholarMetrics.citations.total}</div>
+										</div>
+									</div>
+									
+									<div className="mb-4">
+										<div className="flex justify-between text-sm mb-2">
+											<span className="text-slate-600">Since 2020</span>
+											<div className="space-x-4">
+												<span className="text-slate-600">h-index: <span className="font-semibold text-slate-800">{scholarMetrics.hIndex.total}</span></span>
+												<span className="text-slate-600">i10-index: <span className="font-semibold text-slate-800">{scholarMetrics.i10Index.total}</span></span>
+											</div>
+										</div>
+									</div>
+
+									<div className="relative h-[120px] w-full">
+										<div className="absolute bottom-0 left-0 right-0 flex items-end justify-between h-[100px] gap-1">
+											{scholarMetrics.citationsByYear.map((item, index) => {
+												const blueShades = [
+													'bg-blue-100 hover:bg-blue-200',
+													'bg-blue-200 hover:bg-blue-300',
+													'bg-blue-300 hover:bg-blue-400',
+													'bg-blue-400 hover:bg-blue-500',
+													'bg-blue-500 hover:bg-blue-600',
+													'bg-blue-600 hover:bg-blue-700',
+													'bg-blue-700 hover:bg-blue-800',
+													'bg-blue-800 hover:bg-blue-900'
+												];
+												return (
+													<div 
+														key={item.year} 
+														className={`flex-1 ${blueShades[index]} transition-colors rounded-t`}
+														style={{ height: `${(item.count / maxCitations) * 100}%` }}
+													>
+														<div className="text-xs text-slate-600 text-center mt-2">{item.year}</div>
+													</div>
+												);
+											})}
+										</div>
+									</div>
+								</div>
 							</div>
 							<p className="text-lg text-slate-700 mb-8 max-w-2xl mx-auto lg:mx-0">
 								Assistant Professor at IIIT Kalyani with Ph.D. from Jadavpur University, specializing in 
@@ -181,6 +237,8 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
+
+
 			</div>
 		</section>
 	);
