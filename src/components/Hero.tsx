@@ -43,7 +43,7 @@ export default function Hero() {
 	const [currentSlide, setCurrentSlide] = useState(0);
 	
 	const titles = [
-		"Distinguished Professor | Expert in Quantum Computing, Steganography & Information Security",
+		"Distinguished Professor | Expert in Quantum Computing & Steganography",
 		"Leading Researcher | Quantum Computing & Cryptography Specialist",
 		"Academic Excellence | Information Security & Machine Learning Expert",
 		"Research Pioneer | Advanced Cryptographic Techniques & AI Applications"
@@ -173,7 +173,7 @@ export default function Hero() {
 														className={`flex-1 ${blueShades[index]} transition-colors rounded-t`}
 														style={{ height: `${(item.count / maxCitations) * 100}%` }}
 													>
-														<div className="text-xs text-slate-600 text-center mt-2">{item.year}</div>
+														<div className="text-xs text-slate-600 text-center mt-0">{item.year}</div>
 													</div>
 												);
 											})}

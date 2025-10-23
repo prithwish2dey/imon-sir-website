@@ -183,7 +183,42 @@ const Index = () => {
 			title: "Pushing the Limit: Quantum Technology Revamps Computing",
 			venue: "Techno College of Engineering Agartala",
 			date: "March 6, 2024"
-		}
+		},
+		{
+			title: "ATAL FDP: Cybersecurity in the Age of Industry 4.0/5.0",
+			venue: "Supreme Knowledge Foundation, West Bengal (Sponsored by AICTE-ATAL Academy)",
+			date: "February 8, 2024"
+		},
+		{
+			title: "Unlock the Black Box in a Dark Night",
+			venue: "Gargi Memorial Institute of Technology, West Bengal",
+			date: "January 31, 2024"
+		},
+		{
+			title: "Seen within Unseen or Unseen within Seen?",
+			venue: "IISc Bangalore",
+			date: "January 18, 2024"
+		},
+		{
+			title: "See the Seen within Unseen",
+			venue: "10 Days FDP on Applications of Machine Learning and IoT in Smart Cities (Electronics & ICT Academy, NIT Warangal)",
+			date: "June 21, 2023"
+		},
+		{
+			title: "Keynote: Unseen within Seen: A Steganographic Paradigm",
+			venue: "Crypto-Innovation Series (CIS-23), National Centre of Excellence, DSCI",
+			date: "October 17, 2022"
+		},
+		{
+			title: "Invited Expert: Object Oriented Programming using C++ (Weekly Lectures)",
+			venue: "Indian Association for the Cultivation of Science",
+			date: "2022"
+		},
+		{
+			title: "Use of Computer Games in Education",
+			venue: "Inter-disciplinary Refreshers Course, Jadavpur University",
+			date: "December 11, 2017"
+		},
 	];
 
 	// removed carouselImages and old hero section
