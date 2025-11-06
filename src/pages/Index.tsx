@@ -225,7 +225,7 @@ const Index = () => {
 			<nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50 shadow-sm">
 				<div className="container mx-auto px-6 py-4">
 					<div className="flex justify-between items-center">
-						<h1 className="text-xl font-bold text-slate-800">Imon.</h1>
+						<h1 className="text-xl font-bold text-slate-800"></h1>
 						<div className="hidden md:flex space-x-6">
 							<button onClick={() => scrollToSection('home')} className="text-slate-600 hover:text-blue-600 transition-colors">Home</button>
 							<button onClick={() => scrollToSection('about')} className="text-slate-600 hover:text-blue-600 transition-colors">About</button>
