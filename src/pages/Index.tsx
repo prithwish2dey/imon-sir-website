@@ -161,7 +161,7 @@ const Index = () => {
       		journal: "JCDL 2023",
 			type: "conference",
       		venue: "Santa Fe, New Mexico, USA",
-      		year: ""
+      		year: "2023"
     	},
 		{
       		title: "Disjunctive Edge Map based Image Sterilization for Destruction of Steganograms in Spatial Domain",
