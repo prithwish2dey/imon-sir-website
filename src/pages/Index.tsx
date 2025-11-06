@@ -113,7 +113,13 @@ const Index = () => {
       		indexed: "IEEE"
 		},
 		{
-			
+			title: "Robust Deep Convolutional Solutions for Identifying Biotic Crop Stress in Wild Environments",
+      		authors: "Chiranjit Pal, Imon Mukherjee, Sanjay Chatterji, Sanjoy Pratihar, Pabitra Mitra, Partha Pratim Chakraborti",
+      		journal: "IEEE Transactions on AgriFood Electronics",
+      		year: "2024",
+      		doi: "10.1109/TAFE.2024.3422187",
+      		impactFactor: "N/A",
+      		indexed: "IEEE"
 		},
 		{
 			title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
