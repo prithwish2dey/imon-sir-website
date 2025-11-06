@@ -298,13 +298,13 @@ const Index = () => {
 							<div className="space-y-4">
 								<div className="p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg">
 									<h4 className="font-semibold text-slate-700">Current Position</h4>
-									<p className="text-slate-600">Distinguished Professor, Department of Computer Science & Engineering</p>
+									<p className="text-slate-600">Assistant Professor (Grade I), Department of Computer Science & Engineering</p>
 									<p className="text-slate-600">Indian Institute of Information Technology (IIIT) Kalyani</p>
 								</div>
 								<div className="p-4 bg-gradient-to-r from-purple-50 to-teal-50 rounded-lg">
 									<h4 className="font-semibold text-slate-700">Education</h4>
-									<p className="text-slate-600">Ph.D. in Computer Science from Jadavpur University</p>
-									<p className="text-slate-600">Specialization: Quantum Computing and Cryptography</p>
+									<p className="text-slate-600">Ph.D. in Computer Science and Engineering from Jadavpur University (JU)</p>
+									<p className="text-slate-600">Specialization: Steganography</p>
 								</div>
 							</div>
 						</div>
