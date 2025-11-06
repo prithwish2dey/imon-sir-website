@@ -122,10 +122,15 @@ const Index = () => {
       		indexed: "IEEE"
 		},
 		{
-			title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
-			journal: "3rd International Conference on Security and Privacy (ICSP 2024)",
-			year: "2024",
-			type: "conference"
+			title: "K-Span Select and Multi-Dimensional Judging for Reliable Scholarly Question Answering",
+	      	authors: "Preetam Pati, Sayan De, Saurabh Tiwari, Debarshi Kumar Sanyal and Imon Mukherjee",
+      		conference: "ACM/IEEE Joint Conference on Digital Libraries (JCDL 2025)",
+      		year: "2025",
+      		// doi: "10.1109/TAFE.2024.3422187",
+      		// impactFactor: "N/A",
+      		indexed: "IEEE"
+		},
+		{
 		}
 	];
 
