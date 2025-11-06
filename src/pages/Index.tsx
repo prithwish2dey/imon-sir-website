@@ -130,8 +130,40 @@ const Index = () => {
       		// impactFactor: "N/A",
       		indexed: "IEEE"
 		},
+		 {
+      		title: "Few-TK: A Dataset for Few-shot Scientific Typed Keyphrase Recognition",
+      		authors: "Avishek Lahiri, Imon Mukherjee, Debarshi",
+      		conference: "Findings of the Association for Computational Linguistics: NAACL 2024",
+      		venue: "Mexico",
+      		date: "2024",
+      		publisher: "ACL",
+      		doi: "10.18653/v1/2024.findings-naacl.253"
+    	},
+
 		{
-		}
+      		title: "AgriNER: An NER Dataset of Agricultural Entities for the Semantic Web",
+      		authors: "Sayan De, Debarshi K. Sanyal, Imon Mukherjee",
+      		conference: "ESWC 2023",
+      		venue: "Hersonissos, Greece",
+      		date: "May 28- June 1, 2023",
+      		note: "Scopus Indexed, Tier-I Conference"
+    	},
+ 		{
+      		title: "CitePrompt: Using Prompts to Identify Citation Intent in Scientific Papers",
+      		authors: "Avishek Lahiri, Debarshi Kumar Sanyal and Imon Mukherjee",
+      		conference: "JCDL 2023",
+      		venue: "Santa Fe, New Mexico, USA",
+      		date: "June 26 - 30, 2023"
+    	},
+		{
+      		title: "Disjunctive Edge Map based Image Sterilization for Destruction of Steganograms in Spatial Domain",
+      		authors: "Sreeparna Ganguly, Srijanjeet Singh Sehra, Imon Mukherjee",
+      		conference: "2023 IEEE Silchar Subsection Conference (SILCON 2023)",
+      		venue: "National Institute of Technology Silchar",
+      		date: "2023",
+      		publisher: "IEEE",
+      		award: "Best Paper Award"
+    	}
 	];
 
 	const phdSupervision = {
