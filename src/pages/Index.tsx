@@ -72,11 +72,13 @@ const Index = () => {
 
 	const publications = [
 		{
-			title: "I-ROD: An Ensemble CNNs for Object Detection in Unconstrained Road Scenarios",
-			journal: "Signal, Image and Video Processing",
-			year: "2024",
-			type: "journal",
-			impactFactor: "2.0"
+			title: "Quantized Contour based Intelligent Stego-malware Sterilizer for Smart Consumer Electronics Network",
+      		authors: "Sreeparna Ganguly, Abhisek Banerjee, Arpan Bairagi and Imon Mukherjee",
+      		journal: "IEEE Transactions on Consumer Electronics",
+      		year: "Accepted",
+      		doi: "",
+      		impactFactor: "10.9",
+      		indexed: "SCI/SCI(E)"
 		},
 		{
 			title: "SteriCNN: Cloud Native Stego content Sterilization",
