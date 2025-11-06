@@ -43,10 +43,9 @@ export default function Hero() {
 	const [currentSlide, setCurrentSlide] = useState(0);
 	
 	const titles = [
-		"Distinguished Professor | Expert in Quantum Computing & Steganography",
-		"Leading Researcher | Quantum Computing & Cryptography Specialist",
-		"Academic Excellence | Information Security & Machine Learning Expert",
-		"Research Pioneer | Advanced Cryptographic Techniques & AI Applications"
+		"Assistant Professor (Grade I) | Computer Science and Engineering",
+		"IIIT Kalyani | An Institute of National Importance under Govt. of India",
+		"Researcher | Steganography, Quantum Computing & Data Analytics"		
 	];
 
 	// Auto-play carousel
