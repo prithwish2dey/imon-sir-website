@@ -128,8 +128,8 @@ const Index = () => {
 		{
 			title: "K-Span Select and Multi-Dimensional Judging for Reliable Scholarly Question Answering",
 	      	// authors: "Preetam Pati, Sayan De, Saurabh Tiwari, Debarshi Kumar Sanyal and Imon Mukherjee",
-      		conference: "ACM/IEEE Joint Conference on Digital Libraries (JCDL 2025)",
-      		year: "2025",
+      		journal: "ACM/IEEE Joint Conference on Digital Libraries (JCDL 2025)",
+      		year: "Accepted",
 			type: "conference",
       		// doi: "10.1109/TAFE.2024.3422187",
       		// impactFactor: "N/A",
@@ -138,10 +138,10 @@ const Index = () => {
 		 {
       		title: "Few-TK: A Dataset for Few-shot Scientific Typed Keyphrase Recognition",
       		// authors: "Avishek Lahiri, Imon Mukherjee, Debarshi",
-      		conference: "Findings of the Association for Computational Linguistics: NAACL 2024",
+      		journal: "Findings of the Association for Computational Linguistics: NAACL 2024",
       		venue: "Mexico",
 			type: "conference",
-      		date: "2024",
+      		year: "2024",
       		publisher: "ACL",
       		doi: "10.18653/v1/2024.findings-naacl.253"
     	},
@@ -149,27 +149,27 @@ const Index = () => {
 		{
       		title: "AgriNER: An NER Dataset of Agricultural Entities for the Semantic Web",
       		// authors: "Sayan De, Debarshi K. Sanyal, Imon Mukherjee",
-      		conference: "ESWC 2023",
+      		journal: "ESWC 2023",
 			type: "conference",
       		venue: "Hersonissos, Greece",
-      		date: "May 28- June 1, 2023",
+      		year: "2023",
       		note: "Scopus Indexed, Tier-I Conference"
     	},
  		{
       		title: "CitePrompt: Using Prompts to Identify Citation Intent in Scientific Papers",
       		// authors: "Avishek Lahiri, Debarshi Kumar Sanyal and Imon Mukherjee",
-      		conference: "JCDL 2023",
+      		journal: "JCDL 2023",
 			type: "conference",
       		venue: "Santa Fe, New Mexico, USA",
-      		date: "June 26 - 30, 2023"
+      		year: ""
     	},
 		{
       		title: "Disjunctive Edge Map based Image Sterilization for Destruction of Steganograms in Spatial Domain",
       		// authors: "Sreeparna Ganguly, Srijanjeet Singh Sehra, Imon Mukherjee",
-      		conference: "2023 IEEE Silchar Subsection Conference (SILCON 2023)",
+      		journal: "2023 IEEE Silchar Subsection Conference (SILCON 2023)",
       		venue: "National Institute of Technology Silchar",
 			type: "conference",
-      		date: "2023",
+      		year: "2023",
       		publisher: "IEEE",
       		award: "Best Paper Award"
     	}
