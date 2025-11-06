@@ -104,6 +104,18 @@ const Index = () => {
       		indexed: "SCI/SCI(E)"
 		},
 		{
+			title: "A Hybrid Lane Detection Model for Wild Road Conditions",
+      		authors: "Abhishek Mukhopadhyay, LRD Murthy, Imon Mukherjee and Pradipta Biswas",
+      		journal: "IEEE Transactions on Artificial Intelligence",
+      		year: "2022",
+      		doi: "10.1109/TAI.2022.3212347",
+      		impactFactor: "N/A",
+      		indexed: "IEEE"
+		},
+		{
+			
+		},
+		{
 			title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
 			journal: "3rd International Conference on Security and Privacy (ICSP 2024)",
 			year: "2024",
