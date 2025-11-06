@@ -243,7 +243,8 @@ const Index = () => {
 				startYear: 2019,
 		      	status: "Ongoing"
 		    }
-		];
+			]
+	};
 
 	const talks = [
 		{
