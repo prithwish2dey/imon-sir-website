@@ -191,15 +191,15 @@ const Index = () => {
 				thesis: "Epileptic Seizure Prediction with Channel Optimization",
 				year: "Dec., 2024",
 				position: "Assistant Professor, RCC Institute of Information Technology"
-			}
+			},
+			{
+				name: "Dr. Chiranjit Pal",
+				thesis: "Design of Lightweight Deep Learning Models for Crop Stress Detection",
+				startYear: "Sept., 2025",
+				position: "Post-Doctoral Research Fellow, IIT BHU"
+			},
 		],
 		ongoing: [
-			{
-				name: "Chiranjit Pal",
-				thesis: "Project JRF, MeitY, Govt. of India",
-				startYear: "2021",
-				status: "Thesis Submitted"
-			},
 			{
 				name: "Sreeparna Ganguly",
 				thesis: "SRF, UGC-NET Fellow",
