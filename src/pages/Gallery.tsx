@@ -65,7 +65,8 @@ const galleryImages = [
 	// 	category: "Conference"
 	// },
 	{
-		url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop",
+		// url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop",
+		url: "images/5G.jpg",
 		alt: "Research Publication",
 		title: "Research Publication",
 		category: "Publication"
@@ -77,10 +78,11 @@ const galleryImages = [
 	// 	category: "Meeting"
 	// },
 	{
-		url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
-		alt: "Collaboration",
+		// url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
+		url: "images/BCCL.jpg",
+		alt: "Outreach",
 		title: "Outreach Activity",
-		category: "Collaboration"
+		category: "Outreach"
 	}
 ];
 
