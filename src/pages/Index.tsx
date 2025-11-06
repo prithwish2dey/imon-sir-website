@@ -17,13 +17,6 @@ const Index = () => {
 
 	const researchInterests = [
 		{ 
-			name: "Quantum Computing", 
-			description: "Quantum algorithms, quantum cryptography, and quantum machine learning",
-			icon: Atom,
-			color: "bg-blue-100 text-blue-800 border-blue-200",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Quantum_computing_logo.svg/1200px-Quantum_computing_logo.svg.png"
-		},
-		{ 
 			name: "Steganography", 
 			description: "Advanced data hiding, secure communication, and image sterilization",
 			icon: Lock,
@@ -31,25 +24,18 @@ const Index = () => {
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Steganography_logo.svg/1200px-Steganography_logo.svg.png"
 		},
 		{ 
-			name: "Cryptography", 
-			description: "Post-quantum cryptographic protocols and network security",
+			name: "Quantum Cryptography", 
+			description: "Quantum cryptographic protocols and network security",
 			icon: Lock,
 			color: "bg-red-100 text-red-800 border-red-200",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cryptography_logo.svg/1200px-Cryptography_logo.svg.png"
 		},
 		{ 
-			name: "Information Security", 
-			description: "Cybersecurity, data protection, and e-governance security",
-			icon: Cpu,
-			color: "bg-orange-100 text-orange-800 border-orange-200",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Security_logo.svg/1200px-Security_logo.svg.png"
-		},
-		{ 
-			name: "Machine Learning", 
-			description: "AI applications in agriculture, computer vision, and data analytics",
-			icon: Brain,
-			color: "bg-green-100 text-green-800 border-green-200",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Machine_learning_logo.svg/1200px-Machine_learning_logo.svg.png"
+			name: "Data Analytics and Machine Learning Applications", 
+			description: "AI applications in agriculture, computer vision",
+			icon: Lock,
+			color: "bg-red-100 text-red-800 border-red-200",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cryptography_logo.svg/1200px-Cryptography_logo.svg.png"
 		}
 	];
 
