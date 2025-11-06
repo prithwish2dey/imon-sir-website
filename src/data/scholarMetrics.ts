@@ -1,7 +1,7 @@
 export const scholarMetrics = {
     citations: {
-        total: 996,
-        since2020: 916
+        total: 1008,
+        since2020: 929
     },
     hIndex: {
         total: 16,
