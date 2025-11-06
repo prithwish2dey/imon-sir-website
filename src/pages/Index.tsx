@@ -31,7 +31,7 @@ const Index = () => {
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cryptography_logo.svg/1200px-Cryptography_logo.svg.png"
 		},
 		{ 
-			name: "Data Analytics and Machine Learning Applications", 
+			name: "Data Analytics and Natural Language Processing", 
 			description: "AI applications in agriculture, computer vision",
 			icon: Lock,
 			color: "bg-red-100 text-red-800 border-red-200",
