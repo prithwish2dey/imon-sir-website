@@ -45,7 +45,7 @@ export default function Hero() {
 	const titles = [
 		"Assistant Professor (Grade I) | Computer Science and Engineering",
 		"IIIT Kalyani | An Institute of National Importance under Govt. of India",
-		"Researcher | Steganography, Quantum Computing & Data Analytics"		
+		"Researcher | Steganography, Steganalysis & Quantum Computing"		
 	];
 
 	// Auto-play carousel
