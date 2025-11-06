@@ -211,9 +211,39 @@ const Index = () => {
 				thesis: "Institute Research Fellow",
 				startYear: "2021",
 				status: "Ongoing"
-			}
-		]
-	};
+			},
+    		{
+      			name: "Soumen Bajpayee",
+      			thesis: "Institute Research Fellow",
+				startYear: 2022,
+      			status: "Ongoing"
+    		},
+   			{
+     			name: "Abhisek Banerjee",
+      			thesis: "Institute Research Fellow",
+				startYear: 2021,
+      			status: "Ongoing"
+    		},
+    		{
+      			name: "Sayan De",
+      			thesis: "JRF, SERB-CRG, Govt. of India",
+				startYear: 2023,
+      			status: "Ongoing"
+   			},
+		    // {
+		    //   name: "Sarbani Sen",
+		    //   enrollment: "January, 2023",
+		    //   registration: "May, 2024",
+		    //   project: "JRF, DRDO, Govt. of India",
+		    //   status: "Ongoing"
+		    // },
+		    {
+		      	name: "Sugam Bhuina",
+		      	thesis: "Co-supervisor: Dr. Sambit Bakshi, NIT Rourkela",
+				startYear: 2019,
+		      	status: "Ongoing"
+		    }
+		];
 
 	const talks = [
 		{
@@ -270,7 +300,7 @@ const Index = () => {
 			title: "Use of Computer Games in Education",
 			venue: "Inter-disciplinary Refreshers Course, Jadavpur University",
 			date: "December 11, 2017"
-		},
+		}
 	];
 
 	// removed carouselImages and old hero section
