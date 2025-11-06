@@ -95,6 +95,15 @@ const Index = () => {
 			impactFactor: "8.8"
 		},
 		{
+			title: "Design and analysis of an unbiased intelligent recommendation system for all-rounders in cricket based on multiple criteria decision making",
+      		authors: "Nayan Ranjan Das, Imon Mukherjee, Goutam Paul",
+      		journal: "Engineering Applications of Artificial Intelligence",
+      		year: "2025",
+      		doi: "https://doi.org/10.1016/j.engappai.2025.112197",
+      		impactFactor: "8",
+      		indexed: "SCI/SCI(E)"
+		},
+		{
 			title: "A Quantum Public Key Cryptographic Scheme using Entangled States and Grover Operator",
 			journal: "3rd International Conference on Security and Privacy (ICSP 2024)",
 			year: "2024",
