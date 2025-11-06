@@ -477,35 +477,35 @@ const Index = () => {
 			      Research Interests
 			    </h2>
 			
-			    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
-			      {researchInterests.map((interest, index) => {
-			        const IconComponent = interest.icon;
-			        return (
-			          <Card
-			            key={index}
-			            className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-l-blue-600 bg-white/80 backdrop-blur-sm"
-			          >
-			            <CardContent className="p-6">
-			              <div className="flex items-center gap-3 mb-4">
-			                <div className={`w-12 h-12 rounded-full ${interest.color} flex items-center justify-center`}>
-			                  <IconComponent size={24} />
-			                </div>
-			                <img
-			                  src={interest.logo}
-			                  alt={`${interest.name} logo`}
-			                  className="w-8 h-8 object-contain"
-			                  onError={(e) => {
-			                    e.currentTarget.style.display = 'none';
-			                  }}
-			                />
-			              </div>
-			              <h3 className="font-semibold text-slate-800 mb-2">{interest.name}</h3>
-			              <p className="text-sm text-slate-600">{interest.description}</p>
-			            </CardContent>
-			          </Card>
-			        );
-			      })}
-			    </div>
+			    <div className="flex flex-wrap justify-center gap-6">
+				  {researchInterests.map((interest, index) => {
+				    const IconComponent = interest.icon;
+				    return (
+				      <Card
+				        key={index}
+				        className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-l-blue-600 bg-white/80 backdrop-blur-sm w-72"
+				      >
+				        <CardContent className="p-6">
+				          <div className="flex items-center gap-3 mb-4">
+				            <div className={`w-12 h-12 rounded-full ${interest.color} flex items-center justify-center`}>
+				              <IconComponent size={24} />
+				            </div>
+				            <img
+				              src={interest.logo}
+				              alt={`${interest.name} logo`}
+				              className="w-8 h-8 object-contain"
+				              onError={(e) => {
+				                e.currentTarget.style.display = 'none';
+				              }}
+				            />
+				          </div>
+				          <h3 className="font-semibold text-slate-800 mb-2">{interest.name}</h3>
+				          <p className="text-sm text-slate-600">{interest.description}</p>
+				        </CardContent>
+				      </Card>
+				    );
+				  })}
+				</div>
 			  </div>
 			</section>
 
