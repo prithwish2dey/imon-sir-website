@@ -822,10 +822,10 @@ const Index = () => {
 			<footer className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-8 px-6">
 				<div className="container mx-auto text-center">
 					<p className="text-slate-300">
-						© 2024 Dr. Imon Mukherjee. All rights reserved.
+						© 2025 Dr. Imon Mukherjee. All rights reserved.
 					</p>
 					<p className="text-slate-400 text-sm mt-2">
-						Distinguished Professor, Department of CSE, IIIT Kalyani
+						Assistant Professor (Grade I), Department of CSE, IIIT Kalyani
 					</p>
 				</div>
 			</footer>
