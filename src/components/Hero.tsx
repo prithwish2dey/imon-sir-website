@@ -181,7 +181,7 @@ export default function Hero() {
 								</div>
 							</div>
 							<p className="text-lg text-slate-700 mb-8 max-w-2xl mx-auto lg:mx-0">
-								To work in a reputed academic/administrative position that allows for advanced research in AI and information security (i.e., modeling, analysis, design, and verification) and helps the society in various aspects.
+								Honesty, Eternity and Love.
 							</p>
 						</div>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
